@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0e0e0f">
+<title>Вова и Гитары — все контакты</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0e0e0f;--panel:#17171a;--line:#34343a;--text:#f7f4ee;--mute:#c4c0b7;--accent:#ff5a1f;--accent2:#ffb02e;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{background:var(--bg);-webkit-text-size-adjust:100%;}
+  body{font-family:'Inter','Segoe UI',Arial,sans-serif;font-size:17px;color:var(--text);min-height:100vh;padding:0 14px 56px;position:relative;overflow-x:hidden;
+    background:
+      radial-gradient(700px 380px at 50% -80px,rgba(255,90,31,.22),transparent 70%),
+      repeating-linear-gradient(90deg,transparent 0 calc(16.666% - 1px),rgba(255,255,255,.035) calc(16.666% - 1px) 16.666%),
+      var(--bg);}
+  .wrap{max-width:560px;margin:0 auto;position:relative;}
+  .hero{text-align:center;padding:44px 0 8px;}
+  .logo{width:112px;height:112px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 20px;
+    box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--accent),0 18px 50px rgba(255,90,31,.35);}
+  h1{font-family:'Oswald','Arial Narrow',Impact,sans-serif;font-weight:700;text-transform:uppercase;
+    font-size:clamp(36px,11vw,56px);line-height:1.05;letter-spacing:1px;}
+  .sub{color:var(--mute);font-size:18px;line-height:1.5;margin:12px auto 0;max-width:420px;}
+  .strings{height:14px;margin:22px auto 0;width:140px;border-top:1px solid #c9c3b8;border-bottom:3px solid #c9c3b8;position:relative;opacity:.55;}
+  .strings:after{content:"";position:absolute;left:0;right:0;top:3px;border-top:2px solid #c9c3b8;}
+  .label{font-family:'Oswald',Impact,sans-serif;font-weight:500;font-size:16px;letter-spacing:2px;text-transform:uppercase;
+    color:var(--accent2);margin:38px 0 14px;display:flex;align-items:center;gap:12px;}
+  .label:before{content:"";width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent);flex:none;}
+  .label:after{content:"";height:1px;background:var(--line);flex:1;min-width:12px;}
+  .card,.site{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--text);
+    background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 16px;margin-bottom:10px;min-height:72px;
+    transition:transform .18s,border-color .18s,background .18s;}
+  .card:hover,.site:hover{transform:translateY(-2px);border-color:var(--accent);background:#1d1d21;}
+  .card:active,.site:active{transform:scale(.99);}
+  .ico{width:46px;height:46px;border-radius:12px;background:#26262b;display:grid;place-items:center;flex:none;}
+  .ico svg{width:24px;height:24px;fill:var(--accent2);}
+  .txt{flex:1;min-width:0;}
+  .txt b{display:block;font-weight:600;font-size:18px;line-height:1.3;}
+  .txt small{display:block;color:var(--mute);font-size:15.5px;line-height:1.45;margin-top:4px;}
+  .go{width:22px;height:22px;color:var(--mute);flex:none;transition:.18s;}
+  .card:hover .go,.site:hover .go{color:var(--accent);transform:translate(2px,-2px);}
+  .card.primary{background:linear-gradient(135deg,var(--accent),#d93a06);border:none;padding:20px 16px;box-shadow:0 14px 40px rgba(255,90,31,.32);}
+  .card.primary .ico{background:rgba(0,0,0,.25);width:52px;height:52px;}
+  .card.primary .ico svg{fill:#fff;width:26px;height:26px;}
+  .card.primary .txt b{font-family:'Oswald',Impact,sans-serif;font-size:20px;letter-spacing:.3px;color:#fff;}
+  .card.primary .pl{display:block;font-size:17px;font-weight:500;opacity:.92;}
+  .card.primary .num{display:block;white-space:nowrap;font-size:clamp(24px,8vw,32px);line-height:1.15;font-weight:700;}
+  .card.primary .txt small{color:#fff;font-size:15.5px;margin-top:6px;}
+  .card.primary:hover{background:linear-gradient(135deg,#ff6a33,#e8430d);}
+  .grid{display:grid;grid-template-columns:1fr;gap:0;}
+  @media(min-width:560px){.grid.two{grid-template-columns:1fr 1fr;gap:10px;}.grid.two .card{margin-bottom:0;}}
+  .site .fret{font-family:'Oswald',Impact,sans-serif;font-size:22px;font-weight:700;color:#1a0f00;background:var(--accent2);
+    width:44px;height:44px;border-radius:50%;display:grid;place-items:center;flex:none;}
+  .site:hover .fret{background:var(--accent);color:#fff;}
+  @media(max-width:380px){.card.primary .ico{display:none;}.card .go{width:18px;height:18px;}}
+  footer{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);text-align:center;font-size:16px;color:var(--mute);line-height:1.8;}
+  footer a{color:var(--accent2);text-decoration:none;font-weight:600;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <img class="logo" src="data:image/jpeg;base64,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" alt="Вова и Гитары">
+    <h1>Вова и Гитары</h1>
+    <div class="sub">Гитары, обзоры и честный подбор под ваш бюджет</div>
+    <div class="strings"></div>
+  </div>
+
+  <div class="label">Связаться с командой</div>
+  <a class="card primary" href="tel:+78001012838"><span class="ico"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg></span><span class="txt"><b><span class="pl">Позвонить:</span> <span class="num">8&nbsp;(800)&nbsp;101-28-38</span></b><small>бесплатно по России, ежедневно 9:00–20:00</small></span></a>
+  <div class="grid two">
+  <a class="card " href="https://t.me/manager_vovagitari"><span class="ico"><svg viewBox="0 0 24 24"><path d="M21.5 3.5L2.8 10.7c-.9.35-.88 1.6.03 1.9l4.7 1.6 1.8 5.6c.25.8 1.3 1 1.8.35l2.6-3.1 4.8 3.5c.7.5 1.65.1 1.85-.75L23 4.6c.2-.9-.7-1.4-1.5-1.1zM9 13.6l9.4-6-7.3 7.4-.3 3.1L9 13.6z"/></svg></span><span class="txt"><b>Менеджер в Telegram</b><small>ответим в течение часа</small></span><svg class="go" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  <a class="card " href="https://max.ru/u/f9LHodD0cOIkiBjvgmlWw1xo9bWhPqVPbXc97XgsU2XF8X0GlaT1RXKe6fE"><span class="ico"><svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 012 2v10a2 2 0 01-2 2H9l-5 4v-4a2 2 0 01-2-2V6a2 2 0 012-2z"/></svg></span><span class="txt"><b>Менеджер в MAX</b><small>личный чат с командой</small></span><svg class="go" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+
+  <div class="label">Мы в соцсетях</div>
+  <a class="card " href="https://max.ru/id500307864188_biz"><span class="ico"><svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 012 2v10a2 2 0 01-2 2H9l-5 4v-4a2 2 0 01-2-2V6a2 2 0 012-2z"/></svg></span><span class="txt"><b>MAX — канал «Вова и Гитары»</b></span><svg class="go" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  <a class="card " href="https://t.me/vovanguitars"><span class="ico"><svg viewBox="0 0 24 24"><path d="M21.5 3.5L2.8 10.7c-.9.35-.88 1.6.03 1.9l4.7 1.6 1.8 5.6c.25.8 1.3 1 1.8.35l2.6-3.1 4.8 3.5c.7.5 1.65.1 1.85-.75L23 4.6c.2-.9-.7-1.4-1.5-1.1zM9 13.6l9.4-6-7.3 7.4-.3 3.1L9 13.6z"/></svg></span><span class="txt"><b>Telegram-канал</b><small>разборы, новинки, розыгрыши</small></span><svg class="go" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  <a class="card " href="https://vk.com/vovaigitari"><span class="ico"><svg viewBox="0 0 24 24"><path d="M3 5h4c.3 4 2 6 3.6 6.4V5H14v3.8c1.6-.2 3.2-2 3.8-3.8H21c-.5 2.6-2.3 4.3-3.5 5 1.2.6 3.2 2 4 5h-3.5c-.6-1.9-2-3.3-4-3.5V16h-.8C8 16 3.3 12.3 3 5z"/></svg></span><span class="txt"><b>ВКонтакте</b><small>сообщество и магазин товаров</small></span><svg class="go" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  <a class="card " href="https://www.youtube.com/@vovagitari"><span class="ico"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="txt"><b>YouTube</b><small>обзоры, сравнения, интервью — 40 000+ подписчиков</small></span><svg class="go" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  <a class="card " href="https://rutube.ru/channel/38763362/"><span class="ico"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="txt"><b>Rutube</b><small>все выпуски — тоже там</small></span><svg class="go" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+
+  <div class="label">Наши сайты</div>
+  <a class="site" href="https://gitarof.ru/"><span class="fret">01</span><span class="txt"><b>gitarof.ru — магазин и шоурум</b><small>80+ гитар в наличии, м. Павелецкая, Москва. Запись по телефону</small></span><svg class="go" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  <a class="site" href="https://gopherwoodguitar.ru/"><span class="fret">02</span><span class="txt"><b>Gopherwood — корейские гитары</b><small>официальный сайт поставщика, опт и розница</small></span><svg class="go" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  <a class="site" href="https://parma-online.ru/"><span class="fret">03</span><span class="txt"><b>ПАРМА — российские гитары</b><small>производство, каталог и дилерам</small></span><svg class="go" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  <a class="site" href="https://www.avito.ru/brands/i4229205"><span class="fret">04</span><span class="txt"><b>Мы на Авито</b><small>рейтинг 5,0 — 226 отзывов покупателей</small></span><svg class="go" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+
+  <footer>
+    ИП Лесняк В. В. &middot; <a href="tel:+78001012838">8 (800) 101-28-38</a><br>
+    Шоурум: Москва, ул. Новокузнецкая, 30с2 (м. Павелецкая)<br>
+    Ежедневно 9:00–20:00 &middot; посещение по предварительной записи
+  </footer>
+
+</div>
+</body>
+</html>
